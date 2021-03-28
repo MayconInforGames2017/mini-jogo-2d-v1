@@ -10,7 +10,7 @@ public class MoveScript : MonoBehaviour
     // Movimento do inimigo
     private Vector2 movement;
 
-    private Vector2 direction = new Vector2 (-1, 0);
+    public Vector2 direction = new Vector2 (-1, 0);
 
     // Update is called once per frame
     void Update()
