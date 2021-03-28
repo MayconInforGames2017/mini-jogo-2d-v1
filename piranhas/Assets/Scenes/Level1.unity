@@ -148,8 +148,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1771674829}
   - {fileID: 1916228490}
+  - {fileID: 1771674829}
   m_Father: {fileID: 1807123593}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -318,7 +318,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.064893
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -342,7 +342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.06, y: -0, z: -20.77}
+  m_LocalPosition: {x: -3.7, y: 0.96, z: -67.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454116456}
@@ -746,6 +746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1771674829}
   - component: {fileID: 1771674830}
+  - component: {fileID: 1771674831}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -765,7 +766,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.45, z: 1}
   m_Children: []
   m_Father: {fileID: 124441871}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1771674830
 SpriteRenderer:
@@ -817,6 +818,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1771674831
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771674828}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.67, y: 3.68}
+    newSize: {x: 4.67, y: 3.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1.9}
+  m_EdgeRadius: 0
 --- !u!1 &1807123592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,11 +1034,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916228488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.772324, y: 1.0620289, z: -18.714523}
+  m_LocalPosition: {x: -7.7723246, y: 1.0785, z: -18.714523}
   m_LocalScale: {x: 0.34606934, y: 0.38187498, z: 1}
   m_Children: []
   m_Father: {fileID: 124441871}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1916228491
 BoxCollider2D:
