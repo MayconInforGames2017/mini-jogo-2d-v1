@@ -30,7 +30,10 @@ public class MoveScript : MonoBehaviour
         {
             HealthScript health = collider.gameObject.GetComponent<HealthScript>();
 
-            health.Damage(damage);
+            if (health != null)
+            {
+                health.Damage(damage);
+            }
 
         }
     }
