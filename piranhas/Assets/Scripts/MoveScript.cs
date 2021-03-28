@@ -12,6 +12,18 @@ public class MoveScript : MonoBehaviour
 
     public Vector2 direction = new Vector2 (-1, 0);
 
+    // Inimigo vai tirar um de dano do personagem 
+    public int damage = 1;
+
+    // Identificar o barco
+    public string tag;
+
+    void Start ()
+    {
+        // Apos se colidir no barco o inimigo ira desaparecer
+        Destroy(gameObject, 10); 
+    }
+
     // Update is called once per frame
     void Update()
     {
