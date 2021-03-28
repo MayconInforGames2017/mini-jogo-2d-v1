@@ -16,12 +16,20 @@ public class MoveScript : MonoBehaviour
     public int damage = 1;
 
     // Identificar o barco
-    public string tag;
+    public string objectTag;
 
     void Start ()
     {
-        // Apos se colidir no barco o inimigo ira desaparecer
+        // Apos se colidir com o barco o inimigo ira desaparecer
         Destroy(gameObject, 10); 
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag = objectTag)
+        {
+
+        }
     }
 
     // Update is called once per frame
