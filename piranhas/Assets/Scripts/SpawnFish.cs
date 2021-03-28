@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class SpawnFish : MonoBehaviour
 {
+    public Transform fishPrefab;
+
+    public float spawnRate = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        // A cada 2 segundos esse metodo é acionado
+        InvokeRepeating("Spawn", spawnRate, spawnRate);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Spawn()
     {
-        
+        var fishTransform = Instantiate(fishPrefab) as Transform;
+
+        fishTransform.position = fishTransform.position;
     }
+
 }
