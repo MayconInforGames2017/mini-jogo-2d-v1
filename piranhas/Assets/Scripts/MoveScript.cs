@@ -26,10 +26,13 @@ public class MoveScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-       // if (collider.gameObject.tag = objectTag)
-       // {
+        if (collider.gameObject.tag == objectTag)
+        {
+            HealthScript health = collider.gameObject.GetComponent<HealthScript>();
 
-        //}
+            health.Damage(damage);
+
+        }
     }
 
     // Update is called once per frame
