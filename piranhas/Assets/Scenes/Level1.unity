@@ -761,6 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 5, y: 5}
+  direction: {x: -1, y: 0}
 --- !u!1 &1807123592
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +991,7 @@ PrefabInstance:
     - target: {fileID: 3519978575842321899, guid: 97cd0345c8b767e43a1914a7e4b152a6,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97cd0345c8b767e43a1914a7e4b152a6, type: 3}
