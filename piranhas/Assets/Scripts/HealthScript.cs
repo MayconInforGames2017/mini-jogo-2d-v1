@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class HealthScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // Energia do inimigo
+    public int hp = 1;
+
+    // Metodo que passa o valor do dano
+    public void Damage(int damageCount)
     {
-        
+        hp -= damageCount;
+
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
