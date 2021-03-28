@@ -26,10 +26,10 @@ public class MoveScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag = objectTag)
-        {
+       // if (collider.gameObject.tag = objectTag)
+       // {
 
-        }
+        //}
     }
 
     // Update is called once per frame
