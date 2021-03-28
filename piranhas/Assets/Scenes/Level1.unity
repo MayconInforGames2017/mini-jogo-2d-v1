@@ -650,7 +650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973925776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.132324, y: 2.88, z: -6.115046}
+  m_LocalPosition: {x: 10, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1359628308}
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 3519978575842321897, guid: 97cd0345c8b767e43a1914a7e4b152a6,
     type: 3}
-  spawnRate: 2
+  spawnRate: 1
 --- !u!1 &1152099256
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,47 +783,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1771674828 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3519978575842321896, guid: 97cd0345c8b767e43a1914a7e4b152a6,
-    type: 3}
-  m_PrefabInstance: {fileID: 3519978574390540580}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1771674829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3519978575842321897, guid: 97cd0345c8b767e43a1914a7e4b152a6,
     type: 3}
   m_PrefabInstance: {fileID: 3519978574390540580}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1771674830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1771674828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec930542c04b52040b20d1500ad2e4b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 5, y: 5}
-  direction: {x: -1, y: 0}
-  damage: 1
-  objectTag: Boat
---- !u!114 &1771674831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1771674828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7a5d87db2cc9140ac4d70a611468a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 1
 --- !u!1 &1807123592
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,6 +1025,16 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3519978575842321908, guid: 97cd0345c8b767e43a1914a7e4b152a6,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3588995714984528435, guid: 97cd0345c8b767e43a1914a7e4b152a6,
+        type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97cd0345c8b767e43a1914a7e4b152a6, type: 3}
 --- !u!1001 &7941434722231296593
@@ -1087,7 +1062,7 @@ PrefabInstance:
     - target: {fileID: 7941434720925774299, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.73
+      value: 3.62
       objectReference: {fileID: 0}
     - target: {fileID: 7941434720925774299, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
         type: 3}

@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 3519978575842321908}
   - component: {fileID: 3519978575842321899}
   - component: {fileID: 3519978575842321898}
+  - component: {fileID: 3588995714984528435}
+  - component: {fileID: 1679429599659848350}
   m_Layer: 0
   m_Name: Fish
-  m_TagString: Untagged
+  m_TagString: Boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +132,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3588995714984528435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3519978575842321896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec930542c04b52040b20d1500ad2e4b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 5, y: 5}
+  direction: {x: -1, y: 0}
+  damage: 1
+  objectTag: Boat
+--- !u!114 &1679429599659848350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3519978575842321896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7a5d87db2cc9140ac4d70a611468a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 1
