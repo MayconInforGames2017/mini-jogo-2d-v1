@@ -454,7 +454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751880769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.73, y: 4.39, z: 3.11}
+  m_LocalPosition: {x: 6.27, y: 4.1, z: 3.11}
   m_LocalScale: {x: 1.396894, y: 1.4083889, z: 1.3199}
   m_Children: []
   m_Father: {fileID: 2107164092}
@@ -927,7 +927,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 0
 --- !u!1 &1152099256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1204,11 @@ PrefabInstance:
     - target: {fileID: 7941434720925774297, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
         type: 3}
       propertyPath: m_Name
+      value: Boat
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941434720925774297, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
+        type: 3}
+      propertyPath: m_TagString
       value: Boat
       objectReference: {fileID: 0}
     - target: {fileID: 7941434720925774299, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
