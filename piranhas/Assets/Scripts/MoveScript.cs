@@ -16,7 +16,7 @@ public class MoveScript : MonoBehaviour
     public int damage = 1;
 
     // Identificar o barco
-    public string objectTag;
+    //public string objectTag;
 
     void Start ()
     {
@@ -26,16 +26,21 @@ public class MoveScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == objectTag)
+
+        if (collider.CompareTag("Boat"))
         {
-            HealthScript health = collider.gameObject.GetComponent<HealthScript>();
-
-            if (health != null)
-            {
-                health.Damage(damage);
-            }
-
+            Debug.Log("Colidiu!!!");
         }
+       // if (collider.gameObject.tag == objectTag)
+        //{
+          //  HealthScript health = collider.gameObject.GetComponent<HealthScript>();
+
+            //if (health != null)
+            //{
+              //  health.Damage(damage);
+            //}
+
+        //}
     }
 
     // Update is called once per frame

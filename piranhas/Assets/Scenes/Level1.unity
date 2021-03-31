@@ -766,6 +766,8 @@ GameObject:
   - component: {fileID: 973925781}
   - component: {fileID: 973925782}
   - component: {fileID: 973925783}
+  - component: {fileID: 973925784}
+  - component: {fileID: 973925785}
   m_Layer: 0
   m_Name: SpawnFish
   m_TagString: Boat
@@ -817,7 +819,6 @@ MonoBehaviour:
   speed: {x: 5, y: 5}
   direction: {x: -1, y: 0}
   damage: 1
-  objectTag: Boat
 --- !u!114 &973925780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,12 +923,122 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
+--- !u!114 &973925784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973925776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab53253e2ee7544b860e15463776b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Velocity: 0
+  Speed: 0
+--- !u!60 &973925785
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973925776}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.67, y: 3.68}
+    newSize: {x: 4.67, y: 3.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.385, y: -0.75}
+      - {x: 1.295, y: -0.61}
+      - {x: 1.3249999, y: -0.53999996}
+      - {x: 1.645, y: -0.57}
+      - {x: 1.685, y: -0.52}
+      - {x: 1.685, y: -0.48}
+      - {x: 1.385, y: -0.21}
+      - {x: 1.405, y: -0.14}
+      - {x: 1.665, y: -0.13}
+      - {x: 1.6949999, y: -0.06}
+      - {x: 1.635, y: -0.01}
+      - {x: 1.405, y: 0.14}
+      - {x: 1.395, y: 0.17}
+      - {x: 1.615, y: 0.21}
+      - {x: 1.7149999, y: 0.29999998}
+      - {x: 1.7149999, y: 0.38}
+      - {x: 1.605, y: 0.45999998}
+      - {x: 1.435, y: 0.48}
+      - {x: 1.155, y: 0.35999998}
+      - {x: 1.0849999, y: 0.29999998}
+      - {x: 0.935, y: 0.17}
+      - {x: 0.905, y: 0.26999998}
+      - {x: 0.85499996, y: 0.42999998}
+      - {x: 0.865, y: 0.53}
+      - {x: 0.895, y: 0.62}
+      - {x: 0.835, y: 0.72999996}
+      - {x: 0.705, y: 0.78}
+      - {x: 0.715, y: 0.83}
+      - {x: 0.615, y: 0.93}
+      - {x: 0.36499998, y: 0.93}
+      - {x: 0.185, y: 0.91999996}
+      - {x: -0.205, y: 0.88}
+      - {x: -0.375, y: 0.83}
+      - {x: -0.49499997, y: 0.79999995}
+      - {x: -0.825, y: 0.63}
+      - {x: -0.98499995, y: 0.51}
+      - {x: -1.1949999, y: 0.32}
+      - {x: -1.185, y: 0.29}
+      - {x: -0.805, y: 0.19999999}
+      - {x: -0.59499997, y: 0.07}
+      - {x: -0.765, y: -0.06}
+      - {x: -1.045, y: -0.06}
+      - {x: -1.155, y: -0.07}
+      - {x: -1.235, y: -0.12}
+      - {x: -1.235, y: -0.19}
+      - {x: -1.2149999, y: -0.22999999}
+      - {x: -1.055, y: -0.39999998}
+      - {x: -0.815, y: -0.59}
+      - {x: -0.675, y: -0.69}
+      - {x: -0.565, y: -0.74}
+      - {x: -0.39499998, y: -0.82}
+      - {x: -0.185, y: -0.91999996}
+      - {x: 0.005, y: -0.96999997}
+      - {x: 0.024999999, y: -0.96999997}
+      - {x: 0.055, y: -0.91999996}
+      - {x: 0.155, y: -0.94}
+      - {x: 0.21499999, y: -0.87}
+      - {x: 0.315, y: -0.83}
+      - {x: 0.385, y: -0.76}
+      - {x: 0.345, y: -0.7}
+      - {x: 0.645, y: -0.51}
+      - {x: 0.825, y: -0.37}
+      - {x: 0.97499996, y: -0.69}
+      - {x: 1.165, y: -0.87}
+      - {x: 1.3149999, y: -0.96}
+      - {x: 1.345, y: -0.96999997}
+      - {x: 1.4449999, y: -0.96999997}
+      - {x: 1.495, y: -0.95}
+      - {x: 1.485, y: -0.9}
+      - {x: 1.4549999, y: -0.84}
+      - {x: 1.415, y: -0.78}
 --- !u!1 &1152099256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1321,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Boat
+      objectReference: {fileID: 0}
+    - target: {fileID: 7941434720925774298, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7941434720925774299, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
         type: 3}
