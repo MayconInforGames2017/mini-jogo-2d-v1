@@ -27,8 +27,9 @@ public class MoveScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
 
-        if (collider.CompareTag("Boat"))
+        if (collider.gameObject.CompareTag("Boat"))
         {
+            collider.gameObject.GetComponent<LifeBoat>().ReceberDano();
             Debug.Log("Colidiu!!!");
         }
        // if (collider.gameObject.tag == objectTag)
