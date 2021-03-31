@@ -4,23 +4,30 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float speed = 10f;
 
-    Rigidbody2D rgbd;
+    Vector2 lastClickedPos;
 
-    Animator playerAdmin;
+    bool moving;
 
-    public float Velocity, Speed;
-
-    // Start is called before the first frame update
-    void Start()
+    private void update()
     {
-        gameObject.GetComponent<Rigidbody2D>();
-        playerAdmin = gameObject.GetComponent<Animator>();
-    }
+        if (Input.GetMouseButtonDown(0))
+        {
+            lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            moving = true;
+            Debug.Log("Cliquei");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (moving && (Vector2)transform.position != lastClickedPos)
+        {
+            float step = speed * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, lastClickedPos, step);
+            Debug.Log("Cliquei");
+        }
+        else
+        {
+            moving = false;
+        }
     }
 }

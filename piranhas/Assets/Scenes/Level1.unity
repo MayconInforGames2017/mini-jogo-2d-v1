@@ -149,6 +149,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1916228490}
+  - {fileID: 764070375}
   m_Father: {fileID: 1807123593}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -372,7 +373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689849813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.11, y: 4.19, z: 4.57}
+  m_LocalPosition: {x: -6.11, y: 3.98, z: 4.57}
   m_LocalScale: {x: 1.3496703, y: 1.5247935, z: 1}
   m_Children: []
   m_Father: {fileID: 2107164092}
@@ -416,7 +417,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6790765401531314161, guid: 2851a5576b2a6d3489e8a9023b2b91f6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -498,7 +499,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 5939883335602743853, guid: 2851a5576b2a6d3489e8a9023b2b91f6,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -511,6 +512,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &764070374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 764070375}
+  - component: {fileID: 764070377}
+  - component: {fileID: 764070376}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: SpawnFish
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &764070375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764070374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.75, y: 0, z: 2.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 124441871}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &764070376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764070374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab53253e2ee7544b860e15463776b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &764070377
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764070374}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &779709135
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,8 +992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab53253e2ee7544b860e15463776b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: 0
-  Speed: 0
 --- !u!60 &973925785
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1093,7 +1157,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 707b99b3e165a1446b805af47c2e5e6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1513,6 +1577,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 124441871}
     m_Modifications:
+    - target: {fileID: 7941434720925774296, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7941434720925774297, guid: 4faa5847a52cabe49a4a3fc0fc0473a1,
         type: 3}
       propertyPath: m_Name
