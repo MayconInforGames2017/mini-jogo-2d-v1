@@ -6,8 +6,13 @@ public class BoatScript : MonoBehaviour
 {
 
     // Update is called once per frame
-    void Update()
-    {
+   // void Update()
+    //{
         
+    //}
+
+    public void JoinConga()
+    {
+    //    collider2D.enabled = false;
     }
 }
