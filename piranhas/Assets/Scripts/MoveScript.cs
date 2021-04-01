@@ -32,6 +32,7 @@ public class MoveScript : MonoBehaviour
             collider.gameObject.GetComponent<LifeBoat>().ReceberDano();
             Debug.Log("Colidiu!!!");
         }
+  
        // if (collider.gameObject.tag == objectTag)
         //{
           //  HealthScript health = collider.gameObject.GetComponent<HealthScript>();
