@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+  
     public float speed = 10f;
 
     Vector2 lastClickedPos;
@@ -12,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void update()
     {
+
+
         if (Input.GetMouseButtonDown(0))
         {
             lastClickedPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
